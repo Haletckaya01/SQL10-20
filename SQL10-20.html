@@ -1,0 +1,240 @@
+  <script>
+function spoiler(obj){
+//alert(document.cookie);
+if (obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+{ obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';
+document.cookie = "show=0";
+obj.innerHTML = 'Скрыть|Hide';
+obj.title = 'Скрыть|Hide'; }
+else { obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none';
+document.cookie = "show=1";
+obj.innerHTML = 'Показать|Show';
+obj.title = 'Показать|Show';}
+}
+</script>
+<!DOCTYPE html>
+<html>
+
+
+ <head>
+ <!-- Yandex Native Ads -->
+ <script>window.yaContextCb=window.yaContextCb||[]</script>
+ <script src="https://yandex.ru/ads/system/context.js" async></script>
+ 
+<link rel="stylesheet" type="text/css" href="/templates/letter.css">
+ <link rel="stylesheet" type="text/css" href="/templates/hint.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+        <title>Упражнения на оператор SELECT: обучающий этап</title>
+        <meta name="Description" content="Дистанционное обучение языку баз данных SQL. Интерактивные упражнения и тестирование по операторам SELECT,INSERT,UPDATE,DELETE, сертификация.">
+        <meta name="Keywords" content="интерактивные упражнения, оператор select, обучение sql, тестирование, сертификация, решение задач,язык sql,построение запросов">
+        <meta name="abstract" content="Решение задач по оператору SELECT, обучение, тестирование и сертификация по языку SQL">
+        <meta name="title" content="решение задач по оператору SELECT, тестирование и сертификация по языку SQL ">        <meta name="Robots" content="INDEX, FOLLOW">
+        <meta name="Classification" content="08,education,teaching,training">
+        <link rel="stylesheet" type="text/css" href="/templates/style.css">
+        <script type="text/javascript" LANGUAGE="JavaScript" src="/js/main.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="/js/hint.js"></script>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?147"></script>
+
+</head>
+<body spellcheck="false" bgcolor="#F5F5F5">
+<A name="ref_beg"></a>
+<table width="100%" border="0" cellpadding="5" align="center">
+ <tr>
+  <td width="34%" bgcolor="#CCCCCC" valign="middle">
+        <a class='none' href="/"><b>Упражнения по SQL</b></a>
+
+  </td><td width="33%" bgcolor="#CCCCCC" align="center" valign="middle"><form name="frmtpl">
+Language&nbsp;<select name="lsttpl" style="background-color:#F5F5F5;" OnChange="Sel_Lang(document.frmtpl.lsttpl.selectedIndex)"><option value="0" selected> Русский <option value="1" > English </select>
+ </form>
+  </td><td width="33%" bgcolor="#CCCCCC" align="right" valign="middle">
+<b>March 09, 14:37 MSK</b><!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 718545,
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=718545" alt="???-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45900456 = new Ya.Metrika({
+                    id:45900456,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45900456" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  </td>
+</tr>
+</table>
+<noscript>
+ <table cellpadding="5" align="center"><tr><td valign="middle" bgcolor="#DD3030"><font color="white"><strong>Ресурс "Упражнения по SQL" ориентирован на приобретение практического опыта в написании запросов
+на языке манипуляции данными - <b>SQL DML</b>. На сайте имеются упражнения для начинающих, подкрепленные необходимым <a class="let" href="/help/">справочным материалом</a> по
+синтаксису языка SQL с большим числом примеров . Помимо этого, реализованы 3 рейтинговых этапа, предназначенных для <b>тестирования специалистов и
+сертификации</b>. Ресурс полностью бесплатный, а приобретение сертификатов является делом добровольным.
+<br>ВНИМАНИЕ: для корректной работы сайта браузер должен разрешать использование Cookie и JavaScript.
+<br>Поскольку страницы справки открываются в подчиненном окне, ваш Web-фильтр, если он используется, должен разрешать открытие подчиненных окон.</strong></font></td></tr></table>
+</noscript><table width="90%" height="90%" cellspacing="30" align="center" valign="top"><tr><td>
+ <center><H1>Использование оператора SELECT: обучающий этап</H1></center>
+<p>&nbsp;&nbsp;&nbsp; Здесь вы можете попрактиковаться в написании запросов на выборку (оператор SELECT языка SQL).
+Предлагаемые упражнения ориентированы на начинающих, и решать их можно в любом порядке. Регистрация и авторизованный вход необходимы, чтобы ваши решения сохранялись в системе, велась статистика решенных задач,
+имелась возможность участия в рейтингах и обсуждениях на форуме.<br>
+&nbsp;&nbsp;&nbsp; На странице с упражнениями можно выполнять любые операторы SELECT к учебным базам данных. Чтобы
+отключить проверку правильности решения, поставьте флажок "без проверки".<br>
+&nbsp;&nbsp;&nbsp; Если вы считаете себя профессионалом и собираетесь принять участие в рейтинге специалистов или
+получить сертификат, то переходите к <a class="let" href="/exercises.php">сертификационным этапам</a>. Подробней о <a class="let" href="/certification/certification.php">сертификации</a>.<br>
+&nbsp;&nbsp;&nbsp; Если вы впервые на сайте, мы рекомендуем сначала ознакомиться с <a class="let" href="/site_rules.php">правилами сайта</a> и ответами на <a class="let" href="/faq.php">часто задаваемые вопросы</a>.</p><center><h2>Пожалуйста, идентифицируйте себя:</h2>
+  <form action=/learn_exercises.php method="post" name="frmlogin" onSubmit="this.subm1.disabled=true;">
+ <table align=center width=200px cellspacing=0 cellpadding=1 border=0>
+  <tr><td colspan=2>
+     Логин:<br> <input type="text" style="background-color:#F5F5F5;" name="login" size=16 MAXLENGTH=25><br>
+     Пароль:<br> <input type="password" style="background-color:#F5F5F5;" name="psw" size=16 maxlength=30><br>
+  </td></tr>
+  <tr><td><input type=submit value=Вход name="subm1"></td>
+      <td align=right><a class="let" style='font-size:10px;' href='/personal.php?rememberpsw=yes'>Напомнить пароль</a><br>
+                <a class="let" style='font-size:10px;' href="/register.php">Регистрация</a>
+  </td></tr>
+ </table>
+   </form></center>
+
+
+ <script LANGUAGE=javascript> frmlogin.login.focus();</script>
+<br><br>
+<div style=" text-align:center; margin-left:100px; margin-right:100px; margin-bottom:20px">
+<!-- Yandex.RTB R-A-184442-4 -->
+<div id="yandex_rtb_R-A-184442-4"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-184442-4',
+    blockId: 'R-A-184442-4'
+  })
+})</script>
+</div></td></tr></table><table>
+        <tr>
+        <tr align="middle" height="20">
+                <td align="center" valign="top" width="8%" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#DDDDDD'"><A href=/ rel="nofollow" style="font-size: 8pt;">Начало</A><br>
+                <A href="/last-news-letter.php" style="font-size: 8pt;">Текущие новости</A>
+                </td>
+
+        <td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#E6FFFF'">
+        <div><img name="imgcertf" border="0" src="/images/blueup.gif"><a style="color:#004848;" href="javascript:changeSt('certf')" onmouseout="" onmouseover=""><b>Сертификация</b></a></div>
+        <DIV title="Сертификация" id="certf" name="certf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none; position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/users_page.php?cs=4" >Сертифицированные специалисты</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/certificate_statistics.php" >Статистика</A>
+        </DIV></td>
+        <td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#FFFFE6'">
+        <div><img name="imgexef" border="0" src="/images/blueup.gif"><a style="color:#FF8040;" href="javascript:changeSt('exef')" onmouseout="" onmouseover=""><b>Упражнения по SQL</b></a></div>
+        <DIV title="Упражнения по SQL" id="exef" name="exef" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/learn_exercises.php" >SELECT&nbsp;(обучающий&nbsp;этап)</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/exercises/index.php?act=learn" >SELECT (обуч., выбор СУБД)</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/exercises.php" >SELECT&nbsp;(рейтинговые&nbsp;этапы)</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/dmlexercises.php" >DML&nbsp;</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/modquer/" >Моделирование данных</A>
+        </DIV></td>
+<td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#ECFFEC'">
+        <div><img name="imgforf" border="0" src="/images/blueup.gif"><a style="color:#008000;" href="javascript:changeSt('forf')" onmouseout="" onmouseover=""><b>Форумы</b></a></div>
+        <DIV title="Форумы" id="forf" name="forf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/forum/Lforum.php" >Форум&nbsp;обучающего&nbsp;этапа</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/forum/forum.php" >Форум&nbsp;рейтинговых&nbsp;этапов</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/favorites/" >Избранное</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/forum/search/" >Поиск</A>
+        </DIV></td>
+
+		
+		
+<td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#FFECEC'">
+        <div><img name="imgratf" border="0" src="/images/blueup.gif"><a style="color:#FF0000;" href="javascript:changeSt('ratf')" onmouseout="" onmouseover=""><b>Рейтинги</b></a></div>
+        <DIV title="Рейтинги" id="ratf" name="ratf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/rating.php" >100 лучших результатов</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/rating_day.php" >Статистика за сегодня</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/leaders.php">Текущие показатели лидеров</A>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/quest_rating_median.php">Рейтинг&nbsp;задач&nbsp;второго&nbsp;этапа (медиана)</A><br>
+        </DIV></td>
+<td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#FFECD9'">
+        <div><img name="imghelpf" border="0" src="/images/blueup.gif"><a style="color:#800000;" href="javascript:changeSt('helpf')" onmouseout="" onmouseover=""><b>Помощь</b></a></div>
+        <DIV title="Помощь" id="helpf" name="helpf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/help/" onClick="openHelp();return false;">Справка&nbsp;по&nbsp;SQL(DML)</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<noindex><A class="menu" href="http://sql-tutorial.ru/content.html" target=_blank>Учебник по SQL</A></noindex><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/faq.php">FAQ</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/developers.php">Запрос&nbsp;в&nbsp;поддержку</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<noindex><A class="menu" href="http://www.sqlbooks.ru/">Книги и статьи</A></noindex>
+        </DIV></td>
+
+<td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#DAE4E0'">
+        <div><img name="imgperf" border="0" src="/images/blueup.gif"><a style="color:#004000;" href="javascript:changeSt('perff')" onmouseout="" onmouseover=""><b>Оптимизация</b></a></div>
+        <DIV title="Оптимизация" id="perff" name="helpf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/perfcon.php">План запроса</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/performance.php">Рейтинг по<br>стоимости запроса</A><br>
+&nbsp;&nbsp;&#8226;&nbsp;<A class="menu" href="/optimization/index.php">Конкурс по оптимизации</A>
+        </DIV></td>
+
+                <td align="center" valign="top" width="7%" onmouseout="this.style.backgroundColor='#F5F5F5'" onmouseover="this.style.backgroundColor='#DDDDDD'"><A href="/personal.php" style="font-size: 8pt;">Профиль</A>
+                <br><A href="/links.php" style="font-size: 8pt;">Ссылки</A></td>
+</table>
+<noindex>
+<table width="100%" border="0" align="left">
+    <tr bgcolor="#CCCCCC" valign="middle">
+        <td align="left" width="367">
+
+<!--LiveInternet counter--><script language="JavaScript"><!--
+document.write('<a rel="nofollow" href="http://www.liveinternet.ru/click" '+
+'target="_blank"><img src="http://counter.yadro.ru/hit?t16.2;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';'+Math.random()+'" title="liveinternet.ru: число просмотров и посетителей за сутки и за сегодня" border="0" width="88" height="31"></a>')//--></script>
+<!--/LiveInternet-->
+
+</td><td align="right">
+Copyright SQL-EX &copy; 2002-2018. All rights reserved. <br>
+<a href="mailto:support@sql-ex.ru"> contact </a>
+</td></tr>
+</table>
+</noindex>
+</DIV>
+
+</body></HTML>
